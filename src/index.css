@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+.tox .tox-statusbar__branding svg {
+    display: none !important;
+}
+.tox .tox-statusbar__branding a {
+    display: none !important;
+}
+
