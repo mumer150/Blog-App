@@ -131,7 +131,7 @@ export const UpdatePost = () => {
                 {...register("image", {
                   required: "URL is required",
                   pattern: {
-                    value: /^(https?:\/\/.*\.(?:png|jpg|jpeg|webp|gif))$/i,
+                    value: /^https?:\/\/.+/i,
                     message: "Enter a valid image URL",
                   },
                 })}
