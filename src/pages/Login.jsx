@@ -40,7 +40,7 @@ export const Login = () => {
   const mutatationGoogleLogin = useMutation({
     mutationFn: () => loginWithGoogle(),
     onSuccess: () => {
-      notify("success", "Create Account Successfully");
+      notify("success", "Login Successfully");
       navigate("/");
     },
     onError: (error) => {
