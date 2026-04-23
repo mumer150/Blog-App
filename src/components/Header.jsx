@@ -235,7 +235,7 @@ export default function Header() {
             />
 
             {/* RESULTS */}
-            <div className="mt-3 max-h-80 overflow-y-auto">
+            <div className="mt-3 max-h-80 ">
               {results.length > 0 ? (
                 results.map((post) => (
                   <div
