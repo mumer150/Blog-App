@@ -235,11 +235,11 @@ export default function Header() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search posts..."
-              className="w-full px-3 py-2 border rounded-lg text-sm outline-none"
+              className="w-full px-3 py-2 border rounded-lg text-base  outline-none"
             />
 
             {/* RESULTS */}
-            <div className="mt-3 max-h-80 overflow-y-auto overflow-x-hidden ">
+            <div className="mt-3 max-h-80 overflow-y-auto">
               {results.length > 0 ? (
                 results.map((post) => (
                   <div
