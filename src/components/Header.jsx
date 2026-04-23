@@ -60,7 +60,7 @@ export default function Header() {
       <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
           {/* LOGO */}
-          <Link to="/" className="flex items-center gap-2 group">
+          <Link to="/" onClick={()=>scrollTo(0,0)} className="flex items-center gap-2 group">
             {/* ICON */}
             <div
               className="w-8 h-8 bg-black rounded
@@ -244,6 +244,8 @@ export default function Header() {
                       setFabOpen(false);
                       setQuery("");
                       navigate(`/posts/${post.id}`);
+                      window.scrollTo(0,0)
+                      
                     }}
                     className="flex items-center gap-3 px-2 py-2 hover:bg-gray-100 rounded-lg cursor-pointer"
                   >
